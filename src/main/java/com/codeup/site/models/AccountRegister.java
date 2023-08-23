@@ -1,11 +1,10 @@
 package com.codeup.site.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.security.Timestamp;
+@Entity
+@Table(name="account")
 public class AccountRegister {
 
 
