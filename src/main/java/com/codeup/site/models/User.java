@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 
 import java.security.Timestamp;
 @Entity
-@Table(name="account")
-public class AccountRegister {
+@Table(name="users")
+public class User {
 
 
     @Id
