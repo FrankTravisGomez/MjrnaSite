@@ -20,5 +20,13 @@ public class AssetCategory {
     @JoinColumn(name = "category_id", insertable = false, updatable = false)
     private Categories category;
 
-    // ... getters and setters
+    public AssetCategory() {
+
+    }
+
+    public AssetCategory(int assetId, int categoryId) {
+        this.assetId = assetId;
+        this.categoryId = categoryId;
+    }
+
 }
