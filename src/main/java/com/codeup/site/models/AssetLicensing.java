@@ -19,4 +19,12 @@ public class AssetLicensing {
     private DigitalAsset digitalAsset;
 
 
+    public AssetLicensing(){
+
+    }
+
+    public AssetLicensing(int assetId, int optionId){
+        this.assetId = assetId;
+        this.optionId = optionId;
+    }
 }
