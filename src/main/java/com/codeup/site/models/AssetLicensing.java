@@ -27,4 +27,28 @@ public class AssetLicensing {
         this.assetId = assetId;
         this.optionId = optionId;
     }
+
+    public int getAssetId(){
+        return assetId;
+    }
+
+    public void setAssetId(int assetId) {
+        this.assetId = assetId;
+    }
+
+    public int getOptionId(){
+        return optionId;
+    }
+
+    public void setOptionId(int optionId) {
+        this.optionId = optionId;
+    }
+
+    public DigitalAsset getDigitalAsset(){
+        return digitalAsset;
+    }
+
+    public void setDigitalAsset(DigitalAsset digitalAsset) {
+        this.digitalAsset = digitalAsset;
+    }
 }
