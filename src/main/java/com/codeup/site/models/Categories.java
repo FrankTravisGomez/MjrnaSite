@@ -13,4 +13,28 @@ public class Categories {
 
     @Column(name = "category_name", nullable = false)
     private String categoryName;
+
+    public Categories() {
+
+    }
+
+    public Categories(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
 }
