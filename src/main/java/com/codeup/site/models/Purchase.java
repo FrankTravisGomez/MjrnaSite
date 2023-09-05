@@ -22,4 +22,53 @@ public class Purchase {
 
     @Column(name = "purchase_status", nullable = false)
     private String purchaseStatus = "pending";
+
+    public Purchase() {
+
+    }
+
+    public Purchase(User user, DigitalAsset digitalAsset) {
+        this.user = user;
+        this.digitalAsset = digitalAsset;
+    }
+
+    public int getPurchaseId() {
+        return purchaseId;
+    }
+
+    public void setPurchaseId(int purchaseId) {
+        this.purchaseId = purchaseId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public DigitalAsset getDigitalAsset() {
+        return digitalAsset;
+    }
+
+    public void setDigitalAsset(DigitalAsset digitalAsset) {
+        this.digitalAsset = digitalAsset;
+    }
+
+    public Timestamp getPurchaseDate() {
+        return purchaseDate;
+    }
+
+    public void setPurchaseDate(Timestamp purchaseDate) {
+        this.purchaseDate = purchaseDate;
+    }
+
+    public String getPurchaseStatus() {
+        return purchaseStatus;
+    }
+
+    public void setPurchaseStatus(String purchaseStatus) {
+        this.purchaseStatus = purchaseStatus;
+    }
 }
