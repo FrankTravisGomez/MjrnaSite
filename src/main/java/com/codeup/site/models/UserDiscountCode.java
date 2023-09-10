@@ -20,4 +20,45 @@ public class UserDiscountCode {
     @ManyToOne
     @JoinColumn(name = "code_id", insertable = false, updatable = false)
     private DiscountCode discountCode;
+
+    public UserDiscountCode() {
+
+    }
+
+    public UserDiscountCode(int userId, int codeId) {
+        this.userId = userId;
+        this.codeId = codeId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getCodeId() {
+        return codeId;
+    }
+
+    public void setCodeId(int codeId) {
+        this.codeId = codeId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public DiscountCode getDiscountCode() {
+        return discountCode;
+    }
+
+    public void setDiscountCode(DiscountCode discountCode) {
+        this.discountCode = discountCode;
+    }
 }
