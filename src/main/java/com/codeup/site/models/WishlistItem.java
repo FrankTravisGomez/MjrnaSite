@@ -22,4 +22,46 @@ public class WishlistItem {
 
     @Column(name = "added_date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TTIMESTAMP")
     private Timestamp addedDate;
+
+    public WishlistItem() {
+
+    }
+
+    public WishlistItem(User user, DigitalAsset digitalAsset, Timestamp addedDate) {
+        this.user = user;
+        this.digitalAsset = digitalAsset;
+        this.addedDate = addedDate;
+    }
+
+    public int getWishlistId() {
+        return wishlistId;
+    }
+
+    public void setWishlistId(int wishlistId) {
+        this.wishlistId = wishlistId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public DigitalAsset getDigitalAsset() {
+        return digitalAsset;
+    }
+
+    public void setDigitalAsset(DigitalAsset digitalAsset) {
+        this.digitalAsset = digitalAsset;
+    }
+
+    public Timestamp getAddedDate() {
+        return addedDate;
+    }
+
+    public void setAddedDate(Timestamp addedDate) {
+        this.addedDate = addedDate;
+    }
 }

@@ -21,4 +21,45 @@ public class UserTosAgreement {
     @ManyToOne
     @JoinColumn(name = "agreement_id", insertable = false, updatable = false)
     private TosAgreement tosAgreement;
+
+    public UserTosAgreement() {
+
+    }
+
+    public UserTosAgreement(int userId, int agreementId) {
+        this.userId = userId;
+        this.agreementId = agreementId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public int getAgreementId() {
+        return agreementId;
+    }
+
+    public void setAgreementId(int agreementId) {
+        this.agreementId = agreementId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public TosAgreement getTosAgreement() {
+        return tosAgreement;
+    }
+
+    public void setTosAgreement(TosAgreement tosAgreement) {
+        this.tosAgreement = tosAgreement;
+    }
 }
